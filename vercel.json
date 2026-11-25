@@ -1,4 +1,5 @@
 {
+  "name": "prabu-office",
   "rewrites": [
     { "source": "/", "destination": "/api/app" },
     { "source": "/api.php", "destination": "/api/bridge" },
