@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/", "destination": "/api/app" },
     { "source": "/api.php", "destination": "/api/bridge" },
     { "source": "/login.php", "destination": "/api/login" },
     { "source": "/app.php", "destination": "/api/app" },
