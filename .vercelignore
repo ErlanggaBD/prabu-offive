@@ -1,0 +1,25 @@
+# Backend PHP lama. Disimpan lokal untuk referensi, tidak di-deploy.
+api.php
+login.php
+app.php
+install.php
+config.php
+config.example.php
+router.php
+schema.sql
+.htaccess
+DEPLOY.md
+Requirement Prabu Office;.md
+lib/*.php
+scripts/
+storage/
+
+# HTML asli. Versi deploy memakai app-source.html.
+prabu-office (1).html
+
+# Lokal
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log

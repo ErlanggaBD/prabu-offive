@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    { "source": "/api.php", "destination": "/api/bridge" },
+    { "source": "/login.php", "destination": "/api/login" },
+    { "source": "/app.php", "destination": "/api/app" },
+    { "source": "/app-source.html", "destination": "/api/app" },
+    { "source": "/prabu-office (1).html", "destination": "/api/app" },
+    { "source": "/prabu-office%20(1).html", "destination": "/api/app" },
+    { "source": "/prabu-office(1).html", "destination": "/api/app" }
+  ],
+  "functions": {
+    "api/app.js": {
+      "includeFiles": "app-source.html",
+      "maxDuration": 30
+    },
+    "api/bridge.js": {
+      "maxDuration": 30
+    },
+    "api/login.js": {
+      "maxDuration": 30
+    }
+  }
+}
