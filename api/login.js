@@ -41,6 +41,15 @@ function page(error, csrf, next) {
 </body></html>`;
 }
 
+function query(req, key) {
+  if (req.query && req.query[key] !== undefined) return String(req.query[key]);
+  try {
+    return new URL(req.url || '/', 'http://localhost').searchParams.get(key) || '';
+  } catch (e) {
+    return '';
+  }
+}
+
 function safeNext(next) {
   const allowed = ['app.php', '/app.php', 'app-source.html', '/app-source.html'];
   return allowed.includes(next) ? '/app.php' : '/app.php';
@@ -52,7 +61,7 @@ module.exports = async function login(req, res) {
     let csrf = cookies.prabu_login_csrf || '';
     let setCookies = [];
     let error = '';
-    let next = '';
+    let next = query(req, 'next');
 
     if (req.method === 'POST') {
       const body = await getBody(req);

@@ -10,14 +10,7 @@
   ],
   "functions": {
     "api/app.js": {
-      "includeFiles": "app-source.html",
-      "maxDuration": 30
-    },
-    "api/bridge.js": {
-      "maxDuration": 30
-    },
-    "api/login.js": {
-      "maxDuration": 30
+      "includeFiles": "app-source.html"
     }
   }
 }
