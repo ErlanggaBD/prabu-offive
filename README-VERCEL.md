@@ -25,7 +25,7 @@ DB_PREFIX=prabu_
 BLOB_READ_WRITE_TOKEN=
 ADMIN_USER=admin
 ADMIN_PASS=password_baru
-TZ=Asia/Jakarta
+APP_TZ=Asia/Jakarta
 WA_NUMBER=6282246838645
 ```
 
